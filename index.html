@@ -30,12 +30,14 @@ body{
   font-family:"DM Sans",system-ui,sans-serif;
   line-height:1.45;
 
-  /* Prevent screen bouncing/overscroll & accidental text selection */
-  overscroll-behavior:none;
-  overflow:hidden;
-  -webkit-user-select:none;
-  user-select:none;
-  -webkit-touch-callout:none;
+   /* VERTICAL ONLY SCROLLING */
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  overscroll-behavior-y: contain;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 main{max-width:980px;margin:0 auto;padding:14px 12px 28px}
 h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(24px,5vw,34px);margin:2px 0}
